@@ -6,7 +6,9 @@
 
     <string name="menu2">Ajouter une Entreprise</string>
     <string name="menu3">Editer une Entreprise</string>
-    <string name="menu1"> lister des Entreprise </string>
+    <string name="menu1">Lister des Entreprise</string>
 
+    <string name="btnerg">ENREGISTRER</string>
+    <string name="btnanl">Annuler</string>
 
 </resources>

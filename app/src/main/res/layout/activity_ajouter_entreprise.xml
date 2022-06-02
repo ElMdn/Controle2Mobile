@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".AjouterEntreprise">
 
-</LinearLayout>
+    <EditText
+        style="@style/zonetext"
+        android:hint="Tapez votre Raison social.."
+        android:id="@+id/txtrc"
+        />
+    <EditText
+        android:layout_below="@+id/txtrc"
+        style="@style/zonetext"
+        android:hint="Tapez votre Adresse.."
+        android:id="@+id/txtads"/>
+    <EditText
+        android:layout_below="@+id/txtads"
+        style="@style/zonetext"
+        android:hint="Tapez votre Capital.."
+        android:id="@+id/txtcpt"/>
+
+    <Button
+        style="@style/buttones"
+        android:layout_below="@+id/txtcpt"
+        android:text="@string/btnerg"
+        android:id="@+id/btne"
+        android:onClick="enregiste"/>
+
+    <Button
+        style="@style/buttones"
+        android:layout_below="@+id/txtcpt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:layout_toRightOf="@+id/btne"
+        android:text="@string/btnanl"
+        android:id="@+id/btna"
+        android:onClick="annuler"/>
+
+</RelativeLayout>
